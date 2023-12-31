@@ -56,6 +56,7 @@ io.on('connection', (socket) => {
   });
 });
 
-http.listen(5000, () => {
-  console.log('App is listening');
+const PORT = process.env.PORT || 5000;
+http.listen(PORT, () => {
+    console.log('App is listening on port', PORT);
 });
