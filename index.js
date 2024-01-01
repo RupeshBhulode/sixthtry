@@ -5,7 +5,7 @@ const http = require('http').createServer(app);
 const io = require('socket.io')(http);
 
 const mongoose = require('mongoose');
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://127.0.0.1/SOcketImage';
+const MONGODB_URI = 'mongodb://127.0.0.1/SOcketImage';
 
 mongoose
   .connect(MONGODB_URI, {  useUnifiedTopology: true })
